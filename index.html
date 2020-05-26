@@ -1,0 +1,442 @@
+{% set item = data['items']['annafoody1']['products'][0] %}
+
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Тренинг</title>
+	<link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+	<!-- HEADER -->
+	<header class="header">
+		<div class="header__wrap">
+			<div class="layout-center-wrapper">
+				<div class="header__inner">
+					<div class="header__left">
+						<p class="header__author">Курс Веры Швед</p>
+						<h1 class="header__title">Онлайн курс "Алгоритм здоровья"</h1>
+						<p class="header__slogan">Совершенство тела - Легкость в движении</p>
+						<p class="header__date">{{data["event"]["date"]}}</p>
+						<button type="button" class="template-btn" id="headerToPaymentBtn">
+							<span>Принять участие</span>
+						</button>
+						{% if data['admin'] %}
+						<!-- EDIT TEMPLATE -->
+						<br><br><a href="/manager/info"><button class="template-btn" type="button" id="" onclick="">
+								<span>Изменить описание</span>
+							</button></a>
+						<!-- EDIT TEMPLATE -->
+						{% end %}
+					</div>
+					<div class="header__right">
+						<img src="img/header-intro.png" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div style="background-image: url(img/header-bg.jpg);" class="header__bg-layout">
+		</div>
+	</header>
+
+	<main>
+		<!-- AUDIENCE -->
+		<div class="audience">
+			<div class="layout-center-wrapper">
+				<h3 class="audience__title training-title">Для кого этот курс</h3>
+				<ul class="audience__list">
+					<li class="audience__item">
+						<div class="audience__num"><span>1</span></div>
+						<p class="audience__text">Комплекс рекомендован для всех; кто ведет малоподвижный образ жизни
+							(долгое сидение за компьютером, длительные поездки за рулем)
+						</p>
+					</li>
+					<li class="audience__item">
+						<div class="audience__num"><span>2</span></div>
+						<p class="audience__text">Людям страдающим мигренью, повышенным или пониженным давлением
+						</p>
+					</li>
+					<li class="audience__item">
+						<div class="audience__num"><span>3</span></div>
+						<p class="audience__text">Для тех, кого мучают боли в пояснице, шее, под лопаткой, колене,
+							стопе, плечах
+						</p>
+					</li>
+					<li class="audience__item">
+						<div class="audience__num"><span>4</span></div>
+						<p class="audience__text">Имеются заболевания позвоночника - грыжи, протрузии, остеохондроз</p>
+					</li>
+					<li class="audience__item">
+						<div class="audience__num"><span>5</span></div>
+						<p class="audience__text">Есть ограничение подвижности суставов</p>
+					</li>
+					<li class="audience__item">
+						<div class="audience__num"><span>6</span></div>
+						<p class="audience__text">Хотите подготовиться к родам или восстановить здоровье после них</p>
+					</li>
+					<li class="audience__item">
+						<div class="audience__num"><span>7</span></div>
+						<p class="audience__text">Хотите исправить осанку</p>
+					</li>
+					<li class="audience__item">
+						<div class="audience__num"><span>8</span></div>
+						<p class="audience__text">Физические упражнения рассчитаны на любой возраст и любой уровень
+							подготовки</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<!-- KNOWLEDGE -->
+		<div class="knowledge">
+			<div class="layout-center-wrapper">
+				<h3 class="knowledge__title training-title">Чему вы научитесь</h3>
+				<div class="knowledge__inner">
+					<ul class="knowledge__list">
+						<li class="knowledge__item">
+							<div class="knowledge__num"><span>1</span></div>
+							<p class="knowledge__text">Вернется подвижность позвоночника и суставов</p>
+						</li>
+						<li class="knowledge__item">
+							<div class="knowledge__num"><span>2</span></div>
+							<p class="knowledge__text">Укрепится мышечный корсет</p>
+						</li>
+						<li class="knowledge__item">
+							<div class="knowledge__num"><span>3</span></div>
+							<p class="knowledge__text">Избавитесь от болей в спине и шее </p>
+						</li>
+						<li class="knowledge__item">
+							<div class="knowledge__num"><span>4</span></div>
+							<p class="knowledge__text">Сформируете красивую осанку</p>
+						</li>
+						<li class="knowledge__item">
+							<div class="knowledge__num"><span>5</span></div>
+							<p class="knowledge__text">Приобретете «ощущение легкости»</p>
+						</li>
+						<li class="knowledge__item">
+							<div class="knowledge__num"><span>6</span></div>
+							<p class="knowledge__text">Нормализуется артериальное давление</p>
+						</li>
+						<li class="knowledge__item">
+							<div class="knowledge__num"><span>7</span></div>
+							<p class="knowledge__text">Улучшится сон</p>
+						</li>
+						<li class="knowledge__item">
+							<div class="knowledge__num"><span>7</span></div>
+							<p class="knowledge__text">Перестаните быть метиозависемым</p>
+						</li>
+					</ul>
+
+					<div class="knowledge__img-wrap">
+						<img src="img/about.png" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- MIDDLE TITLE -->
+		<div class="middle-title" style="background-image: url(img/header-bg.jpg);">
+			<div class="layout-center-wrapper">
+				<div class="middle-title__inner">
+					<div>
+						<h1 class="middle-title__text">Онлайн курс "Алгоритм здоровья"</h1>
+					</div>
+					<button type="button" class="template-btn" id="middleToPaymentBtn">
+						<span>Принять участие</span>
+					</button>
+				</div>
+			</div>
+		</div>
+
+		<!-- VIDEO BLOCK -->
+		<div class="video-block">
+			<div class="layout-center-wrapper">
+				<div class="video-block__inner">
+					<div class="video-block__left">
+						<h3 class="video-block__title">специально для вас мы записали видео о&nbsp;курсе</h3>
+
+						<p class="video-block__text">В нем мы расскажем о том, как проходит курс, его особенностях и
+							преимуществах</p>
+					</div>
+
+					<div class="video-block__right">
+						<iframe class="video-block__frame" src="video/shved.mp4" frameborder="0"
+							allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
+							allowfullscreen=""></iframe>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- CAUCH BLOCK -->
+		<div class="coach-block">
+			<div class="layout-center-wrapper">
+				<h3 class="coach-block__title">Автор и руководитель курса</h3>
+				<div class="coach-block__inner">
+					<div class="coach-block__img-wrap">
+						<img src="img/author.png" alt="">
+					</div>
+					<div class="coach-block__desc-wrap">
+						<span class="coach-block__name">Вера Швед</span>
+						<p class="coach-block__text">Услуги фитнес тренера оказываю 28 лет.</p>
+						<p class="coach-block__text">Диплом первой степени. Краевой смотр конкурс за лучшую постановку
+							физкультурно-оздоровительной и спортивно массовой работы с детьми, подростками, молодежью по
+							месту жительства. (Департамент по физической культуре и спорту краснодарского края 2011г.)
+						</p>
+						<p class="coach-block__text">Диплом первой степени. Краевой смотр конкурс за лучшую постановку
+							физкультурно-оздоровительной и спортивно массовой работы с детьми, подростками, молодежью по
+							месту жительства. (Министерство физической культуры и спорта краснодарского края 2013г.)</p>
+						<p class="coach-block__text">Благодарность Министра спорта Российской Федерации за значительный
+							вклад в развитие физической культуры и спорта Российской Федерации. (министр Мутко В.Л.
+							2014г.)</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<!-- FOOTER -->
+	<footer class="footer" style="background-image: url(img/footer-bg.jpg);">
+		<div class="layout-center-wrapper">
+			<div class="footer__inner">
+				<div class="footer__tarif-wrap">
+					<h3 class="footer__title">Тариф включает:</h3>
+
+					<ul class="footer__list">
+						<li class="footer__item">
+							<span class="footer__marker"></span>
+							<p class="footer__text">Курс состоит из 9 видео-уроков</p>
+						</li>
+						<li class="footer__item">
+							<span class="footer__marker"></span>
+							<p class="footer__text">1 Урок 15 мин: Снятие напряжения с шейного отдела</p>
+						</li>
+						<li class="footer__item">
+							<span class="footer__marker"></span>
+							<p class="footer__text">2 Урок 15 мин. Работа с грудным отделом и коррекция осанки</p>
+						</li>
+						<li class="footer__item">
+							<span class="footer__marker"></span>
+							<p class="footer__text">3 Урок 15 мин: Улучшение подвижности плечевых суставов</p>
+						</li>
+						<li class="footer__item">
+							<span class="footer__marker"></span>
+							<p class="footer__text">4 Урок 15 минут: Вытяжение спины. Расслабление поясничного отдела</p>
+						</li>
+						<li class="footer__item">
+							<span class="footer__marker"></span>
+							<p class="footer__text">5 Урок 15 минут: Раскрытие тазобедренных суставов</p>
+						</li>
+						<li class="footer__item">
+							<span class="footer__marker"></span>
+							<p class="footer__text">6 Урок 15 мин: Проработка ног. Улучшение подвижности коленного сустава</p>
+						</li>
+						<li class="footer__item">
+							<span class="footer__marker"></span>
+							<p class="footer__text">7 Урок 15 мин: Проработка стоп, профилактика плоскостопия</p>
+						</li>
+						<li class="footer__item">
+							<span class="footer__marker"></span>
+							<p class="footer__text">8 Урок   15 мин. Комплекс упражнений</p>
+						</li>
+						<li class="footer__item">
+							<span class="footer__marker"></span>
+							<p class="footer__text">9 Урок 15 мин. Комплекс упражнений</p>
+						</li>
+					</ul>
+				</div>
+				<!-- PAYMENT BLOCK -->
+				<div class="payment" id="paymentBlock">
+					<div class="payment__header">
+						<span class="payment__text">Стоимость тренинга:</span>
+						<span class="payment__amount">{{item['price']}} ₽</span>
+					</div>
+
+					{% if lead_promo %}
+					<div class="payment__inner">
+						<div class="payment__btns-wrap">
+							<button class="template-btn" type="button" id="cardBtn">
+								<span>Оплатить картой</span>
+							</button>
+
+							<img src="img/visa-logo.svg" alt="visa">
+						</div>
+						<div class="payment__btns-wrap">
+							<button class="template-btn" type="button" id="ntzdBtn">
+								<span>Оплатить в ntz</span>
+							</button>
+							<img src="img/ntz-logo.svg" alt="visa">
+						</div>
+					</div>
+
+					{% else %}
+					<div class="non-ref">
+						<p class="non-ref__text">Для совершения покупки Вам необходима реферальная ссылка. Для её
+							получения обратитесь к тому, кто Вам посоветовал этот товар или найдите ссылку в инстаграме
+							по хештегу
+							<a href="https://www.instagram.com/explore/tags/netizensteam/">#netizensteam</a></p>
+					</div>
+					{% end %}
+				</div>
+			</div>
+		</div>
+
+		<!-- GOODS BLOCK ! IMPORTANT-->
+		<input type="hidden" name="item_number" id="{{item['code']}}" class="items_quantity" value=1 min=1 disabled
+			data-price="{{item['price']}}" data-old_price="{{item['old_price']}}" data-name="{{item['name']}}"
+			data-image="{{item['image']}}">
+
+		<input type="hidden" name="item_number" id="annafoody12_ticket" class="items_quantity2" value=1 min=1 disabled
+			data-price="6600" data-old_price="6600" data-name="{{item['name']}}" data-image="{{item['image']}}">
+		<!-- GOODS BLOCK ! IMPORTANT-->
+
+		<!-- POLICY BLOCK -->
+		<div class="footer__policy">
+			<div class="layout-center-wrapper">
+				<div class="footer__policy-inner">
+					<span class="footer__policy-left">&copy; Official partner of the Netizens ecosystem</span>
+					<div class="footer__policy-right">
+						<a href="docs/политика конфиденциальности.pdf" class="footer__link" download="">Политика
+							конфиденциальности</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="form__overlay" id="formOverlay"></div>
+		<div class="form__overlay" id="formOverlay2"></div>
+
+		<!-- RUR FORM -->
+		<div class="form__wrap" id="paymentFormRUR">
+			<form action="#" class="form">
+				<span class="form__close-btn" id="closeRurForm"></span>
+				<div class="form__inner">
+					<h3 class="form__title">купить курс</h3>
+					<p class="form__text">Чтобы приобрести курс, заполните все поля</p>
+
+					<input name="name" value="{{lead_name}}" type="text" placeholder="Имя и Фамилия" required
+						class="form__field" id="userNameFormRUR">
+					<input name="phone" value="{{lead_phone}}" type="tel" placeholder="Телефон" class="form__field"
+						required id="userPhoneFormRUR">
+					<input name="email" value="{{lead_email}}" type="email" placeholder="E-mail" required
+						class="form__field" id="userEmailFormRUR">
+
+					<button id="send_rur" class="form__btn template-btn noselect" type="button"
+						onclick="addOrder('FormRUR')">
+						<span>Оплатить</span>
+					</button>
+
+					<p class="form__personal">Нажимая кнопку “Оплатить”, вы соглашаетесь c политикой конфиденциальности
+						и даёте согласие на обработку персональных
+						данных</p>
+				</div>
+			</form>
+		</div>
+
+		<!-- NTZ FORM -->
+		<div class="form__wrap" id="paymentFormNTZ">
+			<form action="#" class="form">
+				<span class="form__close-btn" id="closeNTZForm"></span>
+				<div class="form__inner">
+					<h3 class="form__title">купить курс</h3>
+					<p class="form__text">Чтобы приобрести курс, заполните все поля</p>
+
+					<input name="login" value="{{lead_login}}" type="text" placeholder="Ваш логин в ntz.team" required
+						class="form__field" id="userLoginFormNTZ">
+
+					<input name="name" value="{{lead_name}}" type="text" placeholder="Имя и Фамилия" required
+						class="form__field" id="userNameFormNTZ">
+					<input name="phone" value="{{lead_phone}}" type="tel" placeholder="Телефон" class="form__field"
+						required id="userPhoneFormNTZ">
+					<input name="email" value="{{lead_email}}" type="email" placeholder="E-mail" required
+						class="form__field" id="userEmailFormNTZ">
+
+					<button id="send_ntz" class="form__btn template-btn noselect" type="button"
+						onclick="addOrder('FormNTZ')">
+						<span>Оплатить</span>
+					</button>
+
+					<p class="form__personal">Нажимая кнопку “Оплатить”, вы соглашаетесь c политикой конфиденциальности
+						и даёте согласие на обработку персональных
+						данных</p>
+
+					{% if lead_promo %}
+					<span class="form__control">Контрольное слово: {{lead_promo}}</span>
+					{% end %}
+				</div>
+			</form>
+		</div>
+
+		<!-- RUR FORM -->
+		<div class="form__wrap" id="payment2FormRUR">
+			<form action="#" class="form">
+				<span class="form__close-btn" id="close2RurForm"></span>
+				<div class="form__inner">
+					<h3 class="form__title">купить курс</h3>
+					<p class="form__text">Чтобы приобрести курс, заполните все поля</p>
+
+					<input name="name" value="{{lead_name}}" type="text" placeholder="Имя и Фамилия" required
+						class="form__field" id="userName2FormRUR">
+					<input name="phone" value="{{lead_phone}}" type="tel" placeholder="Телефон" class="form__field"
+						required id="userPhone2FormRUR">
+					<input name="email" value="{{lead_email}}" type="email" placeholder="E-mail" required
+						class="form__field" id="userEmail2FormRUR">
+
+					<button id="send_rur2" class="form__btn template-btn noselect" type="button"
+						onclick="addOrder2('FormRUR')">
+						<span>Оплатить</span>
+					</button>
+
+					<p class="form__personal">Нажимая кнопку “Оплатить”, вы соглашаетесь c политикой конфиденциальности
+						и даёте согласие на обработку персональных
+						данных</p>
+				</div>
+			</form>
+		</div>
+
+		<!-- NTZ FORM -->
+		<div class="form__wrap" id="payment2FormNTZ">
+			<form action="#" class="form">
+				<span class="form__close-btn" id="close2NTZForm"></span>
+				<div class="form__inner">
+					<h3 class="form__title">купить курс</h3>
+					<p class="form__text">Чтобы приобрести курс, заполните все поля</p>
+
+					<input name="login" value="{{lead_login}}" type="text" placeholder="Ваш логин в ntz.team" required
+						class="form__field" id="userLogin2FormNTZ">
+
+					<input name="name" value="{{lead_name}}" type="text" placeholder="Имя и Фамилия" required
+						class="form__field" id="userName2FormNTZ">
+					<input name="phone" value="{{lead_phone}}" type="tel" placeholder="Телефон" class="form__field"
+						required id="userPhone2FormNTZ">
+					<input name="email" value="{{lead_email}}" type="email" placeholder="E-mail" required
+						class="form__field" id="userEmail2FormNTZ">
+
+					<button id="send_ntz2" class="form__btn template-btn noselect" type="button"
+						onclick="addOrder2('FormNTZ')">
+						<span>Оплатить</span>
+					</button>
+
+					<p class="form__personal">Нажимая кнопку “Оплатить”, вы соглашаетесь c политикой конфиденциальности
+						и даёте согласие на обработку персональных
+						данных</p>
+
+					{% if lead_promo %}
+					<span class="form__control">Контрольное слово: {{lead_promo}}</span>
+					{% end %}
+				</div>
+			</form>
+		</div>
+
+	</footer>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/base.js"></script>
+	<script src="js/api.js"></script>
+
+</body>
+
+</html>
