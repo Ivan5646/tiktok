@@ -695,7 +695,6 @@ input[type='number']::-webkit-outer-spin-button {
 	padding-bottom: 40px;
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-position-y: -727px;
 }
 
 .footer:after {
@@ -769,6 +768,8 @@ input[type='number']::-webkit-outer-spin-button {
 .footer__policy {
 	padding-top: 30px;
 	border-top: 1px solid #DD9D3C;
+	position: relative;
+	z-index: 5;
 }
 
 .footer__policy-inner {
@@ -780,7 +781,16 @@ input[type='number']::-webkit-outer-spin-button {
 	align-items: center;
 }
 
+.footer__policy-left {
+	font-size: 18px;
+	line-height: 28px;
+	color: rgba(255, 255, 255, 0.7);
+}
+
 .footer__link {
+	font-size: 18px;
+	line-height: 28px;
+	color: rgba(255, 255, 255, 0.7);
 	text-decoration: underline;
 }
 

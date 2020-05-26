@@ -4,7 +4,6 @@
     padding-bottom: 40px;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position-y: -727px;
     
     &:after {
         content: '\A';
@@ -58,6 +57,8 @@
     &__policy {
         padding-top: 30px;
         border-top: 1px solid #DD9D3C;
+        position: relative;
+        z-index: 5;
     }
     &__policy-inner {
         display: flex;
@@ -65,10 +66,10 @@
         align-items: center;
     }
     &__policy-left {
-        // .training-text(rgba(255, 255, 255, 0.5));
+        .training-text(rgba(255, 255, 255, 0.7));
     }
     &__link {
-        // .training-text(rgba(255, 255, 255, 0.5));
+        .training-text(rgba(255, 255, 255, 0.7));
         text-decoration: underline;
     }
 }
