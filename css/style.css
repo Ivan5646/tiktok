@@ -515,6 +515,7 @@ input[type='number']::-webkit-outer-spin-button {
 	line-height: 28px;
 	color: #353535;
 	margin-right: 20px;
+	width: 290px;
 }
 
 .payment__amount {
